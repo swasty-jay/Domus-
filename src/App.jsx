@@ -1,17 +1,35 @@
+// src/main.jsx
 import React from "react";
-import AppLayout from "./Pages/AppLayout";
-import { Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+// import AppLayout from "./components/AppLayout";
 import Home from "./Pages/Home";
+import Listings from "./Pages/Listings";
 import NotFound from "./Pages/NotFound";
+import Contact from "./Pages/Contact";
+import Blogs from "./Pages/Blogs";
+import About from "./Pages/About";
+import Footer from "./Pages/Footer";
+import AppLayout from "./Pages/AppLayout";
 
-const App = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<AppLayout />} />
-      <Route index element={<Home />} /> {/* default route */}
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-};
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/home", element: <Home /> },
+      { path: "/listings", element: <Listings /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/blogs", element: <Blogs /> },
+      { path: "/about", element: <About /> },
+      { path: "/footer", element: <Footer /> },
+      { path: "*", element: <NotFound /> }, // Catch-all for 404
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
 
 export default App;

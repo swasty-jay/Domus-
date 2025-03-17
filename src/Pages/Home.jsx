@@ -6,6 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Navbar from "../Components/NavBar";
 import Cities from "../Components/Cities";
+import Listings from "./Listings";
+import { Link } from "react-router-dom";
+import WhyWorkWithUs from "../Components/WhyworkWithUs";
+import Footer from "./Footer";
 
 // Sample carousel data
 const carouselData = [
@@ -34,7 +38,7 @@ const carouselData = [
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen ">
       {/* navbar */}
 
       <Navbar />
@@ -71,7 +75,11 @@ function App() {
                     {slide.price}
                   </div>
                   <button className="bg-yellow-400 hover:bg-yellow-500 text-stone-900 font-bold py-3 px-6 rounded-lg transition duration-300 animate-fade-in animation-delay-600">
-                    View Property <span className="ml-2 text-2xl">&rarr;</span>
+                    <Link to="/listings">
+                      {" "}
+                      View Property{" "}
+                      <span className="ml-2 text-2xl">&rarr;</span>
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -83,13 +91,9 @@ function App() {
         <div className="swiper-button-next custom-arrow"></div>
       </Swiper>
       <Cities />
-      {/* Additional Content */}
-      <div className="container mx-auto py-12 px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">
-          Featured Properties
-        </h2>
-        {/* Add more content here */}
-      </div>
+      <WhyWorkWithUs />
+      <Listings />
+      <Footer />
     </div>
   );
 }

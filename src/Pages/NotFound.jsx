@@ -1,14 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Button from "../Components/Button";
 
 const NotFound = () => {
   return (
-    <div className=" pt-16 flex justify-center">
+    <div className=" pt-16 flex justify-center md:justify-center items-center overflow-hidden">
       <h2>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="800"
-            height="600"
+            width="600"
+            height="400"
             fill="none"
             viewBox="0 0 800 600"
           >

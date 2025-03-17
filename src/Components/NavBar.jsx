@@ -32,20 +32,18 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-6 font-medium">
-          {["Home", "Listings", "Members", "Blog", "Pages", "Contact"].map(
-            (link) => (
-              <li key={link}>
-                <Link
-                  to={`/${link.toLowerCase()}`}
-                  className={`${
-                    scrolling ? "text-gray-700" : "text-white"
-                  } hover:text-blue-600 transition duration-300`}
-                >
-                  {link}
-                </Link>
-              </li>
-            )
-          )}
+          {["Home", "Listings", "Blogs", "about", "Contact"].map((link) => (
+            <li key={link}>
+              <Link
+                to={`/${link.toLowerCase()}`}
+                className={`${
+                  scrolling ? "text-gray-700" : "text-white"
+                } hover:text-blue-600 transition duration-300`}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Contact & User Section */}
