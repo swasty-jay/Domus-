@@ -11,6 +11,7 @@ import Blogs from "./Pages/Blogs";
 import About from "./Pages/About";
 import Footer from "./Pages/Footer";
 import AppLayout from "./Pages/AppLayout";
+import PropertyForm from "./Pages/PropertyForm";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/blogs", element: <Blogs /> },
       { path: "/about", element: <About /> },
       { path: "/footer", element: <Footer /> },
+      { path: "/property-form/:cityId", element: <PropertyForm /> },
       { path: "*", element: <NotFound /> }, // Catch-all for 404
     ],
   },

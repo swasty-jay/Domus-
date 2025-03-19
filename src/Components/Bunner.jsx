@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 const Bunner = () => {
   const navigate = useNavigate();
   return (
-    <div className="mt-12 bg-green-800 text-white p-6 rounded-lg flex flex-col md:flex-row justify-between items-center">
+    <div className="mt-12 bg-green-800 text-white p-2 md:p-4 rounded-lg flex flex-col md:flex-row justify-between items-center">
       <div className="ml-8">
-        <h3 className="text-xl font-semibold mt-4 mb-2 ">
+        <h3 className="text-xl font-semibold my-1 md:my-2 text-[10px] md:text-lg">
           Sign in to streamline your search
         </h3>
-        <p className="text-gray-400 text-sm mb-2">
+        <p className="text-gray-400 md:text-sm text-[8px] mb-2 ">
           Save properties, create alerts and keep track of the enquiries you
           send to agents.
         </p>

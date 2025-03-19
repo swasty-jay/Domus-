@@ -17,15 +17,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 uppercase ${
-        scrolling ? "bg-white/90 backdrop-blur-md shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 uppercase bg-slate-900  ${
+        scrolling ? " backdrop-blur-md shadow-md" : "bg-slate-900"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold flex items-center">
           <span className="mr-2">🏠</span>
-          <span className={`${scrolling ? "text-gray-800" : "text-white"}`}>
+          <span className={`${scrolling ? "text-white" : "text-white"}`}>
             JustHome
           </span>
         </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
               <Link
                 to={`/${link.toLowerCase()}`}
                 className={`${
-                  scrolling ? "text-gray-700" : "text-white"
+                  scrolling ? "text-white" : "text-white"
                 } hover:text-blue-600 transition duration-300`}
               >
                 {link}
@@ -76,10 +76,10 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
-            <IoMdClose className={scrolling ? "text-gray-800" : "text-white"} />
+            <IoMdClose className={scrolling ? "text-white" : "text-white"} />
           ) : (
             <HiBars3BottomRight
-              className={scrolling ? "text-gray-800" : "text-white"}
+              className={scrolling ? "text-white" : "text-white"}
             />
           )}
         </button>
