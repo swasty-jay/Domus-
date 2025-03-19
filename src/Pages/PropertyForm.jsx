@@ -24,7 +24,7 @@ const PropertyForm = () => {
       name: "",
       email: "",
       phone: "",
-      action: "Rent",
+      action: "",
       message: "",
     },
   });
@@ -153,7 +153,7 @@ const PropertyForm = () => {
           {/* Form */}
           {error && <p className="text-red-500 mb-4">{error}</p>}
           {success && <p className="text-green-500 mb-4">{success}</p>}
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 mt-4">
             <div>
               <label
                 htmlFor="name"
