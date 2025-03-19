@@ -10,8 +10,7 @@ import CitiesSection from "../Components/Cities";
 import Listings from "../Components/Listings";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import WhyWorkWithUs from "./../Components/WhyworkWithUs";
-
+import Workwithus from "../Components/Workwithus";
 // Sample carousel data
 const carouselData = [
   {
@@ -85,7 +84,7 @@ function App() {
 
       {/* Other Sections */}
       <CitiesSection />
-      <WhyWorkWithUs />
+      <Workwithus />
       <Listings />
       <Footer />
     </div>
