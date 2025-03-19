@@ -9,8 +9,8 @@ import Navbar from "../Components/NavBar";
 import CitiesSection from "../Components/Cities";
 import Listings from "../Components/Listings";
 import { Link } from "react-router-dom";
-import WhyWorkWithUs from "../Components/WhyWorkWithUs";
 import Footer from "./Footer";
+import WhyWorkWithUs from "./../Components/WhyworkWithUs";
 
 // Sample carousel data
 const carouselData = [
