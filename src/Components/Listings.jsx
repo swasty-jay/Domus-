@@ -139,7 +139,7 @@ function Listings() {
                   {property.status}
                 </span>
                 {property.is_featured && (
-                  <span className="bg-yellow-400 text-black text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-yellow-400 text-black text-[6px] md:text-xs font-semibold px-3 py-1 rounded-full">
                     FEATURED
                   </span>
                 )}
