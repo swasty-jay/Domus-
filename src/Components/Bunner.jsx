@@ -20,8 +20,7 @@ const Bunner = () => {
         className="bg-yellow-500 text-green-800 font-semibold py-2  hover:bg-yellow-600 transition duration-300"
         onClick={() => navigate("/signin")}
       >
-        {" "}
-        Sign in or create an account{" "}
+        Sign in or create an account
         <span className="text-2xl ml-1">&rarr;</span>
       </Button>
       {/* <button className="mt-4 md:mt-0 bg-yellow-500 text-black font-semibold py-2 px-6 rounded hover:bg-yellow-600 transition duration-300">

@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaBed, FaBath, FaRulerCombined } from "react-icons/fa"; // Icons for bedrooms, bathrooms, area
 import { supabase } from "../Supabase";
-import Spinner from "../Components/Spinner";
+import Spinner from "./Spinner";
 
 function Listings() {
   const [properties, setProperties] = useState([]); // All properties from Supabase
@@ -80,7 +80,7 @@ function Listings() {
   if (error) {
     return (
       <div className="container mx-auto py-12 px-4 text-center">
-        <p className="text-red-500">{error}</p>
+        <p className="text-red-500 rounded-full">{error}</p>
       </div>
     );
   }
@@ -110,7 +110,7 @@ function Listings() {
           <button
             key={tab}
             onClick={() => filterProperties(tab)}
-            className={`px-4 py-2 rounded-full font-medium transition-colors duration-300 ${
+            className={`px-4 py-2 rounded-full font-medium transition-colors duration-300  text-[8px] md:text-sm ${
               activeTab === tab
                 ? "bg-yellow-500 text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -122,7 +122,7 @@ function Listings() {
       </div>
 
       {/* Properties Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {filteredProperties.map((property) => (
           <div
             key={property.id}
@@ -135,7 +135,7 @@ function Listings() {
             >
               {/* Status and Featured Tags */}
               <div className="absolute top-4 left-4 flex space-x-2">
-                <span className="bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="bg-green-600 text-white text-[6px] md:text-xs font-semibold px-2 py-1 rounded-full">
                   {property.status}
                 </span>
                 {property.is_featured && (
