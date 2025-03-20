@@ -61,7 +61,7 @@ function App() {
 
               {/* Content */}
               <div className="relative max-w-lg text-center px-6 md:px-8 lg:px-10">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 animate-fade-in">
+                <h1 className="text-lg md:text-2xl lg:text-5xl font-semibold mb-3 animate-fade-in">
                   {slide.title}
                 </h1>
                 <p className="text-[12px] md:text-xl lg:text-2xl mb-4 animate-fade-in animation-delay-200">
@@ -71,7 +71,7 @@ function App() {
                   {slide.price}
                 </div>
                 <Link to="/listings">
-                  <button className="bg-yellow-400 hover:bg-yellow-500 text-stone-900 font-bold py-2 px-5 md:py-3 md:px-8 rounded-lg transition duration-300 animate-fade-in animation-delay-600 text-sm md:text-base lg:text-lg">
+                  <button className="bg-yellow-400 hover:bg-yellow-500 text-stone-900 font-bold  md:font-semibold py-2 px-5 md:py-3 md:px-8 rounded-lg transition duration-300 animate-fade-in animation-delay-600 text-sm md:text-base lg:text-lg">
                     View Property{" "}
                     <span className="ml-2 text-xl "> &rarr; </span>
                   </button>

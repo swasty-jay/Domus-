@@ -85,7 +85,7 @@ const PropertyForm = () => {
       setError(error.message);
     } else {
       setSuccess("Your request has been submitted successfully!");
-      setTimeout(() => navigate("/"), 3000); // Redirect to home after 3 seconds
+      setTimeout(() => navigate("/"), 2000); // Redirect to home after 3 seconds
     }
   };
 
@@ -171,7 +171,7 @@ const PropertyForm = () => {
                     message: "Name must be at least 2 characters",
                   },
                 })}
-                className={`mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500 ${
+                className={`mt-1 p-2 w-full border rounded-md focus:ring-yellow-400 focus:border-yellow-400 ${
                   errors.name ? "border-red-500" : ""
                 }`}
               />
@@ -198,7 +198,7 @@ const PropertyForm = () => {
                     message: "Invalid email address",
                   },
                 })}
-                className={`mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500 ${
+                className={`mt-1 p-2 w-full border rounded-md focus:ring-yellow-400 focus:border-yellow-400 ${
                   errors.email ? "border-red-500" : ""
                 }`}
               />
@@ -225,7 +225,7 @@ const PropertyForm = () => {
                     message: "Invalid phone number",
                   },
                 })}
-                className={`mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500 ${
+                className={`mt-1 p-2 w-full border rounded-md focus:ring-yellow-400 focus:border-yellow-400 ${
                   errors.phone ? "border-red-500" : ""
                 }`}
               />
@@ -245,7 +245,7 @@ const PropertyForm = () => {
               <select
                 id="action"
                 {...register("action", { required: "Please select an action" })}
-                className={`mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500 ${
+                className={`mt-1 p-2 w-full border rounded-md focus:ring-yellow-400 focus:border-yellow-400 ${
                   errors.action ? "border-red-500" : ""
                 }`}
                 disabled
@@ -269,15 +269,15 @@ const PropertyForm = () => {
               <textarea
                 id="message"
                 {...register("message")}
-                className="mt-1 p-2 w-full border rounded-md focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 p-2 w-full border rounded-md focus:ring-yellow-400 focus:border-yellow-400"
                 rows="4"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300"
+              className="w-full bg-yellow-300 text-white py-2 rounded-md hover:bg-yellow-400 transition duration-300"
             >
-              Submit Request
+              {success ? "Submitting Form" : "Submit Request"}
             </button>
           </form>
         </div>

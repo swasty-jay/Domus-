@@ -10,9 +10,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900 text-white shadow-md uppercase">
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold flex items-center">
-          <span className="mr-2">🏠</span>
-          <span>JustHome</span>
+        <div className="text-xs md:text-lg font-bold flex items-center">
+          <Link to="/">
+            {" "}
+            <span className="mr-2">🏠</span>
+            <span>JustHome</span>
+          </Link>
         </div>
 
         {/* Desktop Nav Links */}
@@ -21,7 +24,7 @@ const Navbar = () => {
             <li key={link} className="relative">
               <Link
                 to={`/${link.toLowerCase()}`}
-                className="relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-[4px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
+                className="relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-[4px] after:bg-yellow-200 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
               >
                 {link}
               </Link>
