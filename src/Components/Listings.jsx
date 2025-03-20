@@ -96,8 +96,10 @@ function Listings() {
         pauseOnHover
         theme="light"
       />
-
-      <p className="text-center text-white-600 mb-8">
+      <h3 className="text-2xl font-semibold mb-4 text-center">
+        Featured properties
+      </h3>
+      <p className="text-center text-white-600 mb-8 text-xs md:text-sm">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
 
@@ -107,7 +109,7 @@ function Listings() {
           <button
             key={tab}
             onClick={() => filterProperties(tab)}
-            className={`px-4 py-2 rounded-full font-medium transition-colors duration-300 text-[8px] md:text-sm ${
+            className={`px-4 py-2 rounded-full font-medium transition-colors duration-300 text-[9px] md:text-sm ${
               activeTab === tab
                 ? "bg-yellow-500 text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -119,7 +121,7 @@ function Listings() {
       </div>
 
       {/* Properties Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-5">
         {filteredProperties.map((property) => (
           <Link to={`/property-form/${property.id}`} key={property.id}>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105">

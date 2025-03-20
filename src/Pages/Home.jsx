@@ -72,8 +72,7 @@ function App() {
                 </div>
                 <Link to="/listings">
                   <button className="bg-yellow-400 hover:bg-yellow-500 text-stone-900 font-bold py-2 px-5 md:py-3 md:px-8 rounded-lg transition duration-300 animate-fade-in animation-delay-600 text-sm md:text-base lg:text-lg">
-                    View Property{" "}
-                    <span className="ml-2 text-xl sm:text-2xl">→</span>
+                    View Property <span className="ml-2 text-xl ">→</span>
                   </button>
                 </Link>
               </div>
