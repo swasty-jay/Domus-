@@ -7,7 +7,7 @@ const Bunner = () => {
   return (
     <div className="mt-12 bg-green-800 text-white p-2 md:p-4 rounded-lg flex flex-col md:flex-row justify-between items-center">
       <div className="ml-8">
-        <h3 className="text-xl font-semibold my-1 md:my-2 text-[10px] md:text-lg">
+        <h3 className="text-xl font-semibold my-1 md:my-2 text-[9.5px] md:text-lg">
           Sign in to streamline your search
         </h3>
         <p className="text-gray-400 md:text-sm text-[8px] mb-2 ">

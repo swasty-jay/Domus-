@@ -2,7 +2,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-// import AppLayout from "./components/AppLayout";
 import Home from "./Pages/Home";
 import Listings from "./Components/Listings";
 import NotFound from "./Pages/NotFound";

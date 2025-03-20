@@ -100,7 +100,7 @@ function Listings() {
         Featured properties
       </h3>
       <p className="text-center text-white-600 mb-8 text-xs md:text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Enjoy modern amenities and spacious rooms in harmony
       </p>
 
       {/* Tabs */}
@@ -145,7 +145,7 @@ function Listings() {
 
               {/* Property Details */}
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-sm font-semibold text-gray-800">
                   {property.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-2">{property.address}</p>
@@ -158,7 +158,7 @@ function Listings() {
                     <FaBath className="mr-1" />
                     <span>{property.bathrooms}</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center ">
                     <FaRulerCombined className="mr-1" />
                     <span>{property.area}</span>
                   </div>

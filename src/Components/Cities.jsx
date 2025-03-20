@@ -104,7 +104,7 @@ const Cities = () => {
         Find Properties in These Cities
       </h2>
       <p className="text-center text-gray-600 mb-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Experience luxury living with breathtaking ocean views daily
       </p>
       <div className="flex overflow-x-auto space-x-4 pb-4">
         {cities.map((city, index) => (
