@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Workwithus from "../Components/Workwithus";
 import StatSection from "../Components/StatSection";
+import Testimonials from "../Components/Testimonials";
 // Sample carousel data
 const carouselData = [
   {
@@ -90,6 +91,7 @@ function App() {
       <Workwithus />
       <Listings />
       <StatSection />
+      <Testimonials />
       <Footer />
     </div>
   );
