@@ -45,7 +45,9 @@ function App() {
       {/* Carousel Section */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        navigation
+        navigation={{
+          enabled: true,
+        }}
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         className="relative w-full"

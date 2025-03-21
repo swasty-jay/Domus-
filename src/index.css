@@ -12,6 +12,14 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
 /* COLOR SHCEME */
 
 :root {
