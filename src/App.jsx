@@ -7,7 +7,7 @@ import Listings from "./Components/Listings";
 import NotFound from "./Pages/NotFound";
 import Contact from "./Pages/Contact";
 import Blogs from "./Pages/Blogs";
-import About from "./Pages/About";
+import About from "./Pages/AboutSection";
 import Footer from "./Pages/Footer";
 import AppLayout from "./Pages/AppLayout";
 import PropertyForm from "./Pages/PropertyForm";

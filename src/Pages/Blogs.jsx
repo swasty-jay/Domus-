@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   const [blogs, setBlogs] = useState([]);
@@ -10,30 +11,34 @@ const BlogSection = () => {
         {
           id: 1,
           category: "Apartment",
-          date: "March 19, 2024",
+          date: "March 11, 2025",
           title: "Housing Markets That Changed the Most This Week",
-          image: "path_to_image1.jpg",
+          image:
+            "https://yujyiileosrvbcoddbzt.supabase.co/storage/v1/object/public/images//pexels-expect-best-79873-323780%20(2).jpg",
         },
         {
           id: 2,
           category: "Apartment",
-          date: "March 19, 2024",
+          date: "March 17, 2025",
           title: "Read Unveils the Best Canadian Cities for Biking",
-          image: "path_to_image2.jpg",
+          image:
+            "https://yujyiileosrvbcoddbzt.supabase.co/storage/v1/object/public/images//residence-2219972_1280.jpg",
         },
         {
           id: 3,
           category: "Office",
-          date: "March 19, 2024",
+          date: "March 22, 2025",
           title: "10 Walkable Cities Where You Can Live Affordably",
-          image: "path_to_image3.jpg",
+          image:
+            "https://yujyiileosrvbcoddbzt.supabase.co/storage/v1/object/public/images//sa-rapita-2483668_1280.jpg",
         },
         {
           id: 4,
           category: "Shop",
-          date: "March 19, 2024",
+          date: "March 19, 2025",
           title: "New Apartment Nice in the Best Canadian Cities",
-          image: "path_to_image4.jpg",
+          image:
+            "https://yujyiileosrvbcoddbzt.supabase.co/storage/v1/object/public/images//house-2943878_640.jpg",
         },
       ]);
     }, 1000);
@@ -61,12 +66,12 @@ const BlogSection = () => {
                 {blog.category} • {blog.date}
               </p>
               <h3 className="text-lg font-semibold mt-2">{blog.title}</h3>
-              <a
-                href="#"
+              <Link
+                to={`/blog/${blog.id}`}
                 className="text-yellow-500 font-medium mt-4 inline-block"
               >
                 Read More →
-              </a>
+              </Link>
             </div>
           </div>
         ))}

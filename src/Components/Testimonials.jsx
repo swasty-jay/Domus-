@@ -92,12 +92,9 @@ function Testimonials() {
         <div className="mt-12 text-center text-gray-400">
           <p>Thousands of world’s leading companies trust us</p>
           <div className="flex justify-center gap-2 mt-4">
-            <span className="text-lg">Amazon</span>
-            <span className="text-lg">AMD</span>
-            <span className="text-lg">Cisco</span>
-            {/* <span className="text-lg">Dropcam</span> */}
-            {/* <span className="text-lg">Logitech</span> */}
-            <span className="text-lg">Spotify</span>
+            <img src="./amazon.png" alt="amazon logo" className="h-14" />
+            <img src="./logitech.png" alt="logitech logo" className="h-14" />
+            <img src="./spotify-logo.png" alt="spotify logo" className="h-14" />
           </div>
         </div>
       </div>

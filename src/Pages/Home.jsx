@@ -20,21 +20,21 @@ const carouselData = [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
     title: "Luxury Beachfront Villa",
     description: "Experience paradise in this stunning 4-bedroom villa",
-    price: "$250/month",
+    price: "GHS2500/month",
   },
   {
     image:
       "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
     title: "Modern Downtown Apartment",
     description: "Sleek and stylish living in the heart of the city",
-    price: "$850/month",
+    price: "GHS8500/month",
   },
   {
     image:
       "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
     title: "Countryside Mansion",
     description: "Spacious estate with breathtaking views",
-    price: "$500/month",
+    price: "GHS5000/month",
   },
 ];
 
