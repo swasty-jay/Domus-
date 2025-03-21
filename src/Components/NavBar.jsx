@@ -13,7 +13,6 @@ const Navbar = () => {
         <div className="text-xs md:text-lg font-bold flex items-center">
           <Link to="/">
             {" "}
-            <span className="mr-2">🏠</span>
             <span>JustHome</span>
           </Link>
         </div>

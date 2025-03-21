@@ -11,6 +11,7 @@ import Listings from "../Components/Listings";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Workwithus from "../Components/Workwithus";
+import StatSection from "../Components/StatSection";
 // Sample carousel data
 const carouselData = [
   {
@@ -88,6 +89,7 @@ function App() {
       <CitiesSection />
       <Workwithus />
       <Listings />
+      <StatSection />
       <Footer />
     </div>
   );

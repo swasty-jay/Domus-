@@ -85,7 +85,9 @@ const PropertyForm = () => {
     if (error) {
       setError(error.message);
     } else {
-      toast.success("Your request has been submitted successfully!");
+      toast.success(
+        "Your request has been submitted successfully, we would get back to you soon!"
+      );
       setTimeout(() => navigate("/"), 3000); // Redirect after 3 secondster 3 seconds
     }
   };
@@ -110,7 +112,7 @@ const PropertyForm = () => {
 
       <div className="min-h-screen bg-gray-100 pt-28">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6 text-center">
+          <h2 className="text-xl font-bold mb-6 text-center">
             {property.title}
           </h2>
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
@@ -281,7 +283,7 @@ const PropertyForm = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-yellow-300 text-white py-2 rounded-md hover:bg-yellow-400 transition duration-300"
+                className="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-500 transition duration-300"
               >
                 {success ? "Submitting..." : "Submit Request"}
               </button>
