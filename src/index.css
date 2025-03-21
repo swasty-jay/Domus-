@@ -13,11 +13,19 @@ body {
   height: 100vh;
 }
 
+/* SWIPPER CUSTOMIZATION */
+
 @media (max-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
     display: none !important;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-grey-400) !important;
+  font-size: 10px !important;
 }
 
 /* COLOR SHCEME */
