@@ -85,7 +85,7 @@ const PropertyForm = () => {
       setError(error.message);
     } else {
       setSuccess("Your request has been submitted successfully!");
-      setTimeout(() => navigate("/"), 2000); // Redirect to home after 3 seconds
+      setTimeout(() => navigate("/"), 5000); // Redirect to home after 3 seconds
     }
   };
 
@@ -277,7 +277,7 @@ const PropertyForm = () => {
               type="submit"
               className="w-full bg-yellow-300 text-white py-2 rounded-md hover:bg-yellow-400 transition duration-300"
             >
-              {success ? "Submitting Form" : "Submit Request"}
+              {success ? "Submitting..." : "Submit Request"}
             </button>
           </form>
         </div>
