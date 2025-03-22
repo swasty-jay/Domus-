@@ -30,7 +30,7 @@ const Bunner = () => {
 
   return (
     <section className="mt-12 bg-gradient-to-r from-green-600 to-green-900 text-white rounded-xl shadow-lg overflow-hidden">
-      <div className="relative container mx-auto px-6 py-4 md:py-6 flex flex-col md:flex-row items-center justify-between">
+      <div className="relative container mx-auto px-6 py-4 md:pt-6 flex flex-col md:flex-row items-center justify-between">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/subtle-stripes.png')]"></div>
 
@@ -48,8 +48,7 @@ const Bunner = () => {
               Streamline Your Property Search
             </h3>
             <p className="text-gray-200 text-sm md:text-base">
-              Sign in to save properties, set up alerts, and track your
-              inquiries with ease.
+              Sign in to save properties and track your inquiries with ease.
             </p>
           </motion.div>
 
@@ -63,7 +62,7 @@ const Bunner = () => {
           >
             <button
               onClick={() => navigate("/signin")}
-              className="flex items-center text-[10px] px-6 py-3 bg-yellow-500 text-green-900 font-semibold rounded-xl hover:bg-yellow-600 transition duration-300"
+              className="flex items-center text-[10px] md:text-sm px-6 py-3 bg-yellow-500 text-green-900 font-semibold rounded-xl hover:bg-yellow-600 transition duration-300"
             >
               <FaSignInAlt className="mr-2" />
               Sign In or Create Account
@@ -71,7 +70,7 @@ const Bunner = () => {
             </button>
             <button
               onClick={() => navigate("/about")}
-              className="flex items-center px-6 text-[10px] py-3 bg-transparent border border-yellow-500 text-yellow-500 font-semibold rounded-xl hover:bg-yellow-500 hover:text-green-900 transition duration-300"
+              className="flex items-center px-6 text-[10px] md:text-sm py-3 bg-transparent border border-yellow-500 text-yellow-500 font-semibold rounded-xl hover:bg-yellow-500 hover:text-green-900 transition duration-300"
             >
               Learn More
             </button>
