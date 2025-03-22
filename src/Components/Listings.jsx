@@ -83,7 +83,7 @@ function Listings() {
   }
 
   return (
-    <div className="container mx-auto py-20 px-4">
+    <div className="container mx-auto py-16 px-4">
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -96,15 +96,15 @@ function Listings() {
         pauseOnHover
         theme="light"
       />
-      <h3 className="text-2xl font-semibold mb-4 text-center">
+      <h3 className="text-sm  md:text-lg font-semibold mb-2 text-center">
         Featured properties
       </h3>
-      <p className="text-center text-white-600 mb-8 text-xs md:text-sm">
+      <p className="text-center text-white-600 mb-4 text-xs md:text-sm">
         Enjoy modern amenities and spacious rooms in harmony
       </p>
 
       {/* Tabs */}
-      <div className="flex justify-center mb-8 space-x-4">
+      <div className="flex justify-center mb-4 space-x-4">
         {["All Properties", "Villa", "Apartment", "Office"].map((tab) => (
           <button
             key={tab}

@@ -74,7 +74,7 @@ const ContactMe = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
               Get in Touch with Us
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">

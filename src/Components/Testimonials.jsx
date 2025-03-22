@@ -39,18 +39,18 @@ function Testimonials() {
       <div className="bg-black text-white py-16 px-4 md:px-16 lg:px-32">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-2xl md:text-4xl font-semibold">
-              What our customers are saying !
+            <h2 className="text-xl md:text-2xl font-semibold">
+              What Our Clients Say
             </h2>
             <div className="flex items-center space-x-4 mt-4">
-              <div className="text-3xl font-bold">10m+</div>
+              <div className="text-3xl font-bold">5,000</div> <div>+</div>{" "}
               <div className="text-lg">Happy Clients</div>
             </div>
             <div className="flex items-center space-x-4 mt-2">
-              <div className="text-3xl font-bold">4.88</div>
+              <div className="text-3xl font-bold">4.6</div>
               <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-yellow-500" />
+                {[...Array(4)].map((_, i) => (
+                  <FaStar key={i} className="text-yellow-400 space-x-1" />
                 ))}
               </div>
               <div className="text-lg">Overall Rating</div>
@@ -91,10 +91,28 @@ function Testimonials() {
         <hr className="border-gray-700 mt-8" />
         <div className="mt-12 text-center text-gray-400">
           <p>Thousands of world’s leading companies trust us</p>
-          <div className="flex justify-center gap-2 mt-4">
-            <img src="./amazon.png" alt="amazon logo" className="h-14" />
-            <img src="./logitech.png" alt="logitech logo" className="h-14" />
-            <img src="./spotify-logo.png" alt="spotify logo" className="h-14" />
+          <div className="flex justify-center gap-4 mt-4">
+            <div>
+              <img src="./amazon.png" alt="amazon logo" className="h-14" />
+              <span className="text-gray-500">amazon</span>
+            </div>
+            <div>
+              <img src="./logitech.png" alt="logitech logo" className="h-14" />
+              <span className="text-gray-500">logitech</span>
+            </div>
+
+            <div>
+              <img src="./techcrunch.png" alt="spotify logo" className="h-14" />
+              <span className="text-gray-500">techcrunch</span>
+            </div>
+            <div>
+              <img
+                src="./spotify-logo.png"
+                alt="spotify logo"
+                className="h-14"
+              />
+              <span className="text-gray-500">spotify</span>
+            </div>
           </div>
         </div>
       </div>

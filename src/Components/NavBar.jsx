@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="text-xs md:text-lg font-bold flex items-center">
           <Link to="/">
             {" "}
-            <span>JustHome</span>
+            <span>Domus</span>
           </Link>
         </div>
 

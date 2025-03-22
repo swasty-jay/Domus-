@@ -100,11 +100,11 @@ const Cities = () => {
         pauseOnHover
         theme="light"
       />
-      <h2 className="text-3xl font-bold text-center mb-4">
+      <h2 className="text-sm md:text-lg font-bold text-center mb-2">
         Find Properties in These Cities
       </h2>
-      <p className="text-center text-gray-600 mb-8">
-        Experience luxury living with breathtaking ocean views daily
+      <p className="text-center text-gray-600 mb-4 text-[12px] md:text-sm">
+        Experience luxury living with breathtaking ocean views daily.
       </p>
       <div className="flex overflow-x-auto space-x-4 pb-4">
         {cities.map((city, index) => (
@@ -119,7 +119,7 @@ const Cities = () => {
             >
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>
               <div className="absolute top-4 left-4 text-white">
-                <h3 className="text-xl font-semibold">{city.name}</h3>
+                <h3 className="text-lg font-semibold">{city.name}</h3>
                 <p className="text-sm">{city.properties} Properties</p>
               </div>
             </div>

@@ -8,8 +8,8 @@ const Workwithus = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
         {/* Title and Subtitle */}
-        <h2 className="text-lg md:text-xl font-semibold mb-2">
-          Why You Should Work With Us
+        <h2 className="text-[16px] md:text-xl font-semibold mb-2">
+          Why Work With Us?
         </h2>
         <p className="text-gray-600 mb-8">
           Trusted advisors dedicated to your success always available.
@@ -44,7 +44,7 @@ const Workwithus = () => {
           </div>
         </div>
 
-        {/* CTA Banner */}
+        {/* Banner */}
         <Bunner />
       </div>
     </section>

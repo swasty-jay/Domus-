@@ -22,7 +22,9 @@ const AboutSection = () => {
           variants={sectionVariants}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            About Us
+          </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
             Learn about our mission to help you find your dream property with
             ease and confidence.
@@ -38,15 +40,14 @@ const AboutSection = () => {
           className="flex flex-col md:flex-row items-center gap-8 mb-12"
         >
           <div className="md:w-1/2">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-4 flex items-center">
               <FaHome className="text-blue-500 mr-2" />
               Your Real Estate Partner
             </h3>
             <p className="text-gray-600">
-              At [Your Company Name], we specialize in residential and
-              commercial properties in [Your Location]. With over 10 years of
-              experience, we’re here to make your property journey seamless and
-              enjoyable.
+              At Domus, we specialize in residential and commercial properties
+              in Accra. With over 10 years of experience, we’re here to make
+              your property journey seamless and enjoyable.
             </p>
             <p className="text-gray-600 mt-2">
               Our personalized approach ensures we meet your unique needs,
@@ -71,24 +72,23 @@ const AboutSection = () => {
           variants={sectionVariants}
           className="mb-12"
         >
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center flex items-center justify-center">
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-6 text-center flex items-center justify-center">
             <FaRocket className="text-blue-500 mr-2" />
             Our Journey & Values
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h4 className="text-xl font-semibold text-gray-800 mb-2">
+              <h4 className="text-lg font-semibold text-gray-800 mb-2">
                 Our Story
               </h4>
               <p className="text-gray-600">
-                Founded in 2010 by [Founder Name], we started as a small family
-                business in [Your Location]. Today, we’re a leading agency,
-                managing thousands of properties and earning awards like [Award
-                Name] in 2018.
+                Founded in 2022 by Daniel Yawson, we started as a small family
+                business in Ghana, Tema. Today, we’re a leading agency, managing
+                thousands of properties across the globe.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h4 className="text-xl font-semibold text-gray-800 mb-2">
+              <h4 className="text-lg font-semibold text-gray-800 mb-2">
                 Our Values
               </h4>
               <ul className="text-gray-600 space-y-2">
@@ -117,7 +117,7 @@ const AboutSection = () => {
           variants={sectionVariants}
           className="mb-12"
         >
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center flex items-center justify-center">
+          <h3 className="text-xl font-semibold text-gray-800 mb-6 text-center flex items-center justify-center">
             <FaUsers className="text-blue-500 mr-2" />
             Our Team & Achievements
           </h3>
@@ -136,14 +136,14 @@ const AboutSection = () => {
             </div>
             <div className="md:w-1/2">
               <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">
                   Meet Our Team
                 </h4>
                 <p className="text-gray-600 mb-4">
                   Our dedicated team of experts in real estate, finance, and
                   customer service is here to support you every step of the way.
                 </p>
-                <h4 className="text-xl font-semibold text-gray-800 mb-2 flex items-center">
+                <h4 className="text-lg font-semibold text-gray-800 mb-2 flex items-center">
                   <FaTrophy className="text-blue-500 mr-2" />
                   Achievements
                 </h4>
@@ -174,7 +174,7 @@ const AboutSection = () => {
           variants={sectionVariants}
           className="text-center"
         >
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">
             Ready to Find Your Dream Property?
           </h3>
           <p className="text-gray-600 mb-6">
@@ -183,13 +183,13 @@ const AboutSection = () => {
           <div className="flex justify-center space-x-4">
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300"
+              className="inline-flex text-sm items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300"
             >
               Contact Us
             </Link>
             <Link
               to="/listings"
-              className="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition duration-300"
+              className="inline-flex text-sm items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition duration-300"
             >
               Explore Properties
             </Link>
