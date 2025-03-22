@@ -46,7 +46,7 @@ const BlogSection = () => {
 
   return (
     <section className="py-20 px-4 text-center">
-      <h2 className="text-3xl font-bold">Recent Articles & News</h2>
+      <h2 className="text-xl font-bold">Recent Articles & News</h2>
       <p className="text-gray-500 mt-2">
         Stay updated with the latest trends and insights.
       </p>
@@ -65,7 +65,7 @@ const BlogSection = () => {
               <p className="text-sm text-gray-400">
                 {blog.category} • {blog.date}
               </p>
-              <h3 className="text-lg font-semibold mt-2">{blog.title}</h3>
+              <h3 className="text-base font-semibold mt-2">{blog.title}</h3>
               <Link
                 to={`/blog/${blog.id}`}
                 className="text-yellow-500 font-medium mt-4 inline-block"

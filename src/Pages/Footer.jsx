@@ -9,6 +9,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Footer = () => {
@@ -25,7 +26,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
-          <h3 className="text-xl font-bold mb-4">JustHome</h3>
+          <h3 className="text-xl font-bold mb-4">Domus</h3>
           <p className="text-gray-400 mb-4">
             Your trusted partner in finding the perfect home. Explore a wide
             range of properties with expert guidance.
@@ -68,39 +69,39 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+          <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <a
-                href="/home"
+              <Link
+                to="/home"
                 className="text-gray-400 hover:text-white transition duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/listings"
+              <Link
+                to="/listings"
                 className="text-gray-400 hover:text-white transition duration-300"
               >
                 Listings
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-gray-400 hover:text-white transition duration-300"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="text-gray-400 hover:text-white transition duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -109,13 +110,13 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Contact Us</h3>
           <p className="text-gray-400 flex items-center mb-2">
-            <FaEnvelope className="mr-2" /> info@justhome.com
+            <FaEnvelope className="mr-2" /> swastyjay2022@gmail.com
           </p>
           <p className="text-gray-400 flex items-center mb-2">
-            <FaPhoneAlt className="mr-2" /> +68 685 8866
+            <FaPhoneAlt className="mr-2" /> 0245870688
           </p>
           <p className="text-gray-400 flex items-center">
-            <FaMapMarkerAlt className="mr-2" /> 123 Property Lane, Dubai
+            <FaMapMarkerAlt className="mr-2" /> Tema,Ghana
           </p>
         </div>
 
@@ -146,7 +147,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="mt-8 border-t border-gray-800 pt-4 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} JustHome. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Domus. All rights reserved.</p>
       </div>
     </footer>
   );
