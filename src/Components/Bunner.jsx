@@ -2,7 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaSignInAlt, FaArrowRight } from "react-icons/fa"; // Icons for visual appeal
+import { FaArrowRight } from "react-icons/fa"; // Icons for visual appeal
 
 const Bunner = () => {
   const navigate = useNavigate();
@@ -64,7 +64,6 @@ const Bunner = () => {
               onClick={() => navigate("/signin")}
               className="flex items-center text-[9px] md:text-sm px-6 py-3 bg-yellow-500 text-green-900 font-semibold rounded-xl hover:bg-yellow-600 transition duration-300"
             >
-              <FaSignInAlt className="mr-2" />
               Sign In or Create Account
               <FaArrowRight className="ml-2" />
             </button>
