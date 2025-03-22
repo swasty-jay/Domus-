@@ -60,7 +60,7 @@ const Workwithus = () => {
               >
                 {item.icon}
               </motion.div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <h3 className="text-base font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>
             </motion.div>
           ))}
