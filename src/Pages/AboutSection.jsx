@@ -139,8 +139,8 @@ const AboutSection = React.memo(() => {
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="md:w-1/2">
               <img
-                src={placeholderImage}
-                data-src="./team.jpg"
+                // src={placeholderImage}
+                src="./team.jpg"
                 alt="Our Team"
                 className="w-full h-64 md:h-72 object-cover rounded-xl shadow-md lazy-load"
                 loading="lazy"

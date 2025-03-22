@@ -1,5 +1,5 @@
-// src/components/WhyWorkWithUs.jsx
 import React from "react";
+import { motion } from "framer-motion";
 import { FaHome, FaDollarSign, FaShieldAlt } from "react-icons/fa";
 import Bunner from "./Bunner";
 
@@ -8,40 +8,62 @@ const Workwithus = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
         {/* Title and Subtitle */}
-        <h2 className="text-[16px] md:text-xl font-semibold mb-2">
+        <motion.h2
+          className="text-[16px] md:text-xl font-semibold mb-2"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           Why Work With Us?
-        </h2>
-        <p className="text-gray-600 mb-8">
+        </motion.h2>
+        <motion.p
+          className="text-gray-600 mb-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           Trusted advisors dedicated to your success always available.
-        </p>
+        </motion.p>
 
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="p-6">
-            <FaHome className="text-2xl md:text-3xl text-gray-800 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">
-              Wide Range of Properties
-            </h3>
-            <p className="text-gray-600">
-              We offer expert legal help for all related property items in
-              Dubai.
-            </p>
-          </div>
-          <div className="p-6">
-            <FaDollarSign className="text-2xl md:text-3xl text-gray-800 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Buy or Rent Homes</h3>
-            <p className="text-gray-600 ">
-              We sell your home at the best market price and very quickly as
-              well.
-            </p>
-          </div>
-          <div className="p-6">
-            <FaShieldAlt className="text-2xl md:text-3xl text-gray-800 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Trusted by Thousands</h3>
-            <p className="text-gray-600">
-              We offer you free consultancy to get a loan for your new home.
-            </p>
-          </div>
+          {[
+            {
+              icon: <FaHome />,
+              title: "Wide Range of Properties",
+              description:
+                "We offer expert legal help for all related property items in Dubai.",
+            },
+            {
+              icon: <FaDollarSign />,
+              title: "Buy or Rent Homes",
+              description:
+                "We sell your home at the best market price and very quickly as well.",
+            },
+            {
+              icon: <FaShieldAlt />,
+              title: "Trusted by Thousands",
+              description:
+                "We offer you free consultancy to get a loan for your new home.",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              className="p-6"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              <motion.div
+                className="text-2xl inline-block md:text-3xl text-gray-800 mx-auto mb-4"
+                whileHover={{ scale: 1.1 }}
+              >
+                {item.icon}
+              </motion.div>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-600">{item.description}</p>
+            </motion.div>
+          ))}
         </div>
 
         {/* Banner */}

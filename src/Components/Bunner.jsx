@@ -62,7 +62,7 @@ const Bunner = () => {
           >
             <button
               onClick={() => navigate("/signin")}
-              className="flex items-center text-[10px] md:text-sm px-6 py-3 bg-yellow-500 text-green-900 font-semibold rounded-xl hover:bg-yellow-600 transition duration-300"
+              className="flex items-center text-[9px] md:text-sm px-6 py-3 bg-yellow-500 text-green-900 font-semibold rounded-xl hover:bg-yellow-600 transition duration-300"
             >
               <FaSignInAlt className="mr-2" />
               Sign In or Create Account
@@ -70,7 +70,7 @@ const Bunner = () => {
             </button>
             <button
               onClick={() => navigate("/about")}
-              className="flex items-center px-6 text-[10px] md:text-sm py-3 bg-transparent border border-yellow-500 text-yellow-500 font-semibold rounded-xl hover:bg-yellow-500 hover:text-green-900 transition duration-300"
+              className="flex items-center px-6 text-[9px] md:text-sm py-3 bg-transparent border border-yellow-500 text-yellow-500 font-semibold rounded-xl hover:bg-yellow-500 hover:text-green-900 transition duration-300"
             >
               Learn More
             </button>
